@@ -1,0 +1,91 @@
+body{
+    zoom:150%;
+    background: rgb(0,235,157);
+    background: linear-gradient(72deg, rgba(0,235,157,1) 0%, rgba(24,215,150,1) 18%, rgba(26,128,185,1) 50%, rgba(7,104,198,1) 70%, rgba(0,75,148,1) 100%);
+}
+
+header, main, footer{
+    width:100vw;
+}
+
+#main-logo{
+    display:flex;
+    align-items:center;
+    position:relative;
+    top:60px;
+    left:90px;
+}
+
+#header-nav{
+    display:flex;
+    width:420px;
+    justify-content:space-around;
+    position:absolute;
+    right:10px;
+    top:15px;
+}
+
+#main-presentation{
+    display:flex;
+    flex-direction:column;
+    width:370px;
+    align-items:center;
+    position:relative;
+    left:80px;
+    top:90px;
+}
+
+#logo-img{
+    width:170px;
+}
+
+#logo-text{
+    font-family:'exo 2', sans-serif;
+    color:white;
+    font-size:1.5em;
+}
+
+#presentation-text{
+    font-size:2.5em;
+    color:white;
+    text-align:center;
+    font-family:'Open sans';
+    letter-spacing:1px;
+    line-height:28px;
+    font-weight:600;
+}
+
+#presentation-btn{
+    margin-top:6px;
+    font-size:1.3em;
+}
+
+#bg2{
+    width:200%;
+    height:500px;
+    background-color:white;
+    transform:rotate(9deg);
+    position:relative;
+    left:-90px;
+    bottom:-215px;
+}
+
+#avatar{
+    position:absolute;
+    width:320px;
+    right:20px;
+    bottom:-33px;
+    z-index:1;
+}
+
+.btn{
+    padding:8px 20px;
+    width:175px;
+    border-radius:50px;
+    font-size:1.2em;
+    border:none;
+    background-color:white;
+    color:#2A6EF2;
+    font-weight:700;
+    letter-spacing:1px;
+}
