@@ -3,14 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 /* reset CSS */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-    font-size:10px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 10px;
 }
 
-body{
-    overflow:hidden;
+body {
+    overflow: hidden;
 }
 
+a,
+a:visited {
+    text-decoration: none;
+}

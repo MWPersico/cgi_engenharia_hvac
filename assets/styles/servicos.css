@@ -1,0 +1,169 @@
+main {
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+}
+
+aside {
+    width: 30%;
+    height: 85vh;
+    background-color: #2A6EF2;
+    border-radius: 20px;
+    padding: 0 10px;
+    margin-right: 80px;
+    transition: transform .2s linear;
+    color:white;
+}
+
+aside:hover {
+    transform: translateX(10px)
+}
+
+footer {
+    height: 10vh;
+    width: 50vw;
+}
+
+#cards {
+    display: flex;
+    width: 100%;
+}
+
+#servicos {
+    margin-left: 80px;
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+}
+
+#servicos-titulo {
+    font-size: 3.8em;
+    font-family: Helvetica, sans-serif;
+    color: #2A6EF2;
+    text-align: center;
+    width: 200px;
+    margin-right: 200px;
+    letter-spacing: 2px;
+}
+
+#servicos-lista {
+    height: 100%;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#footer-btn {
+    position: relative;
+    bottom: 35px;
+    left: 345px;
+}
+
+#footer-btn a {
+    font-size: 1em;
+    padding: 6px 20px;
+    color: white;
+}
+
+#header-btn {
+    font-size: 1.8em;
+    width: 200px;
+    padding: 3px 20px 7px;
+    margin: 20px 0 0 100px;
+}
+
+#header-btn a {
+    color: white;
+    font-size: .7em;
+}
+
+#card-image1 {
+    width: 120px;
+}
+
+#card-image3 {
+    width: 160px;
+}
+
+#card-texto1 {
+    width: 90%;
+}
+
+#card-texto2 {
+    width: 95%;
+}
+
+#card-texto3 {
+    width: 89%;
+    line-height: 25px;
+}
+
+.servico-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 250px;
+    height: 310px;
+    background-color: #2A6EF2;
+    border-radius: 20px;
+    padding: 10px 25px;
+    margin: 0 10px;
+    transition: transform .1s linear;
+}
+
+.servico-card:hover {
+    transform: translateY(5px);
+}
+
+.servico-item {
+    font-size: 2em;
+    font-family: Helvetica, sans-serif;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.card-image {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+.card-titulo {
+    color: white;
+    font-family: Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 1.7em;
+    font-weight: bold;
+    text-align: left;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.card-texto {
+    color: white;
+    font-size: 1.6em;
+    font-family: Helvetica, sans-serif;
+    font-weight: lighter;
+    line-height: 20px;
+    text-shadow: inside px solid transparent;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn {
+    font-size: 2em;
+    padding: 6px 25px;
+    padding-bottom: 8px;
+    border-radius: 50px;
+    border: none;
+    background-color: #2A6EF2;
+    font-weight: 800;
+    letter-spacing: 1px;
+    transition: transform .1s linear;
+}
+
+.btn:hover {
+    transform: translateY(3px);
+    cursor: pointer;
+}
