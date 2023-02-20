@@ -1,7 +1,9 @@
 body {
-    zoom: 150%;
-    background: rgb(0, 235, 157);
-    background: linear-gradient(90deg, rgba(0, 235, 157, 1) 0%, rgba(24, 215, 150, 1) 18%, rgba(26, 128, 185, 1) 50%, rgba(7, 104, 198, 1) 70%, rgba(0, 75, 148, 1) 100%);
+    display: flex;
+    flex-direction: column;
+    background: rgb(13, 241, 241);
+    background: linear-gradient(110deg, rgba(13, 241, 241, 1) 0%, rgba(17, 189, 219, 1) 33%, rgba(7, 105, 216, 1) 80%, rgba(7, 105, 216, 1) 100%);
+    background-size: cover;
 }
 
 header,
@@ -15,46 +17,44 @@ a:visited {
 }
 
 #main-logo {
-    width: 340px;
+    width: 25%;
     justify-content: space-around;
     display: flex;
     align-items: center;
     position: relative;
-    top: 60px;
+    top: 30px;
     left: 90px;
 }
 
 #header-nav {
     display: flex;
-    width: 420px;
+    width: 28%;
     justify-content: space-around;
-    position: absolute;
-    right: 10px;
+    position: relative;
+    left: 38%;
     top: 15px;
 }
 
 #main-presentation {
     display: flex;
     flex-direction: column;
-    width: 390px;
+    width: 25%;
     align-items: center;
-    position: relative;
-    left: 80px;
-    top: 90px;
+    margin-left: 80px;
+    margin-top: 65px;
 }
 
 #avatar-image {
     position: absolute;
     width: 32%;
-    height: 440px;
+    height: auto;
     right: 45px;
-    bottom: -48px;
+    bottom: -20px;
     z-index: 5;
-
 }
 
 #logo-img {
-    width: 160px;
+    width: 42%;
 }
 
 #logo-text {
@@ -79,18 +79,27 @@ a:visited {
     font-size: 1.3em;
 }
 
-#bg2 {
-    width: 200%;
-    height: 500px;
-    background-color: white;
-    transform: rotate(9deg);
-    position: relative;
-    left: -90px;
-    bottom: -214px;
-}
-
 #avatar {
     max-width: 100%;
+}
+
+#header-btn2 {
+    margin-left: 5px;
+}
+
+#bg {
+    width: 100%;
+    z-index: -1000;
+}
+
+#bg-triangle {
+    width: 0;
+    height: 0;
+    border-bottom: 320px solid white;
+    border-right: 65vw solid transparent;
+    border-top-color: transparent;
+    position: relative;
+    top: -22px;
 }
 
 .btn {
@@ -106,7 +115,123 @@ a:visited {
     transition: transform .1s linear;
 }
 
+.btn a {
+    width: 100%;
+    height: 100%;
+}
+
 .btn:hover {
     transform: translateY(3px);
     cursor: pointer;
+}
+
+@media(max-width:1000px) {
+    body {
+        overflow-y: scroll;
+    }
+
+    body,
+    main,
+    #header-nav,
+    #main-logo,
+    #main-presentation,
+    #avatar-image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #main-logo,
+    #header-nav,
+    #main-presentation,
+    #avatar-image {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    #logo-img {
+        width: 30%;
+    }
+
+    #logo-text {
+        font-size: 2.2em;
+
+    }
+
+    #header-nav {
+        height: 15vh;
+        top: 10px;
+    }
+
+    #main-presentation {
+        margin-top: 50px;
+        width: 90%;
+        margin-left: 30px;
+    }
+
+    #presentation-text {
+        width: 80%;
+    }
+
+    #presentation-btn {
+        font-size: 2.2em;
+        margin-top: 10px;
+    }
+
+    #avatar-image {
+        position: relative;
+        top: 10px;
+        height: 100px;
+    }
+
+    #avatar {
+        width: 300px;
+        position: relative;
+        top: -50px;
+        left: 63%;
+    }
+
+    #bg-triangle {
+        border-bottom: 230px solid white;
+        border-right: 100vw solid transparent;
+        border-top-color: transparent;
+        position: relative;
+        top: 40px;
+    }
+
+    .btn {
+        font-size: 2.2em;
+        width: 280px;
+    }
+}
+
+@media(max-width:750px) {
+    body {
+        overflow-y: scroll;
+        height: 900px
+    }
+
+    #bg-triangle {
+        border-bottom: 230px solid white;
+        top: 40px
+    }
+
+    #avatar-image {
+        top: 70px;
+    }
+
+    #avatar {
+        width: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #logo-img {
+        width: 50%;
+    }
+
+    .btn {
+        font-size: 2em;
+        width: 280px;
+    }
 }

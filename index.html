@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.5">
-    <meta name="viewport" content="user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/home.css">
     <link rel="shortcut icon" href="./assets/images/icone.png" type="image/x-icon">
     <title>Home</title>
 </head>
 <body>
+    <script>
+        if (window.innerWidth > 1000) {
+            document.body.style.zoom = "150%";
+        }
+    </script>
     <header>
         <nav id="header-nav">
-            <button class="btn" id="header-btn1"><a href="./empresa/">QUEM SOMOS</a></button>
-            <button class="btn" id="header-btn2"><a href="./servicos/">NOSSOS SERVIÇOS</a></button>
+            <a href="./empresa/"><button class="btn" id="header-btn1">QUEM SOMOS</button></a>
+            <a href="./servicos/"><button class="btn" id="header-btn2">NOSSOS SERVIÇOS</button></a>
         </nav>
     </header>
     <main>
@@ -26,11 +30,12 @@
         <div id="main-presentation">
             <h2 id="presentation-text">PARA VOCÊ QUE BUSCA UM SERVIÇO DE QUALIDADE PARA SEU SISTEMA DE AR CONDICIONADO
                 DE SUA CASA OU EMPRESA.</h2>
-            <button class='btn' id="presentation-btn"><a href="./contato/">FALE CONOSCO</a></button>
+            <a href="./contato/"><button class='btn' id="presentation-btn">FALE CONOSCO</button></a>
         </div>
         <div id="avatar-image"><img id="avatar" src="./assets/images/tecnico.png"></div>
     </main>
-    <div id="bg2"></div>
-    <footer></footer>
+    <div id="bg">
+        <div id="bg-triangle"></div>
+    </div>
 </body>
 </html>

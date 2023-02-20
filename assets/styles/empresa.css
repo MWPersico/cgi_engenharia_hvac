@@ -13,7 +13,6 @@ header {
 }
 
 footer {
-    height: 100px;
     position: absolute;
     bottom: 0;
 }
@@ -57,7 +56,7 @@ main {
 
 #footer-btn {
     margin-left: 200px;
-    margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 #footer-btn a {
@@ -93,6 +92,7 @@ main {
     font-weight: 800;
     letter-spacing: 1px;
     transition: transform .1s linear;
+    color: white;
 }
 
 .btn a {
@@ -108,4 +108,122 @@ main {
     width: 200px;
     height: 400px;
     border-radius: 30px;
+}
+
+@media(min-width:1600px) {
+    main {
+        padding-left: 100px;
+        padding-top: 50px;
+    }
+
+    #footer-btn {
+        margin-bottom: 10px;
+    }
+
+    .btn {
+        font-size: 3em;
+    }
+
+    .texto {
+        font-size: 3.5em;
+    }
+
+    .imagem-servico {
+        width: 250px;
+        height: 500px;
+    }
+}
+
+@media(max-width:1000px) {
+    body {
+        overflow-y: scroll;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main {
+        padding: 0;
+    }
+
+    footer {
+        position: relative;
+        display: flex;
+    }
+
+    header {
+        height: 15vh;
+    }
+
+    main,
+    #header-nav,
+    #textos {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main,
+    #header-nav,
+    #textos {
+        width: 100%;
+        left: 0;
+        margin-left: 0;
+    }
+
+    #header-btn1 {
+        margin: 0 0 20px;
+    }
+
+    #servico1,
+    #servico2 {
+        transform: translateY(0);
+    }
+
+    #textos {
+        margin-left: 50px;
+    }
+
+    #imagens {
+        margin: 100px 0 0 10px;
+        width: 80%;
+    }
+
+    #header-nav {
+        height: 15vh;
+        margin: 15px 0;
+    }
+
+    #footer-btn {
+        position: relative;
+        top: -410px;
+        left: -150px;
+    }
+
+    #texto1,
+    #texto2 {
+        width: 90%;
+    }
+
+    .btn {
+        font-size: 2.2em;
+        width: 310px;
+    }
+}
+
+@media(max-width:750px) {
+    #imagens {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #textos {
+        margin-left: 20px;
+    }
+
+    #footer-btn {
+        top: -880px;
+    }
+
+    #servico1 {
+        margin-bottom: 20px;
+    }
 }

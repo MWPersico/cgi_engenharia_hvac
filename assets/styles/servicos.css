@@ -12,7 +12,7 @@ aside {
     padding: 0 10px;
     margin-right: 80px;
     transition: transform .2s linear;
-    color:white;
+    color: white;
 }
 
 aside:hover {
@@ -59,6 +59,7 @@ footer {
     position: relative;
     bottom: 35px;
     left: 345px;
+    color: white;
 }
 
 #footer-btn a {
@@ -68,10 +69,11 @@ footer {
 }
 
 #header-btn {
-    font-size: 1.8em;
+    font-size: 1.5em;
     width: 200px;
     padding: 3px 20px 7px;
     margin: 20px 0 0 100px;
+    color: white;
 }
 
 #header-btn a {
@@ -166,4 +168,107 @@ footer {
 .btn:hover {
     transform: translateY(3px);
     cursor: pointer;
+}
+
+@media(min-width:1600px) {
+    #footer-btn {
+        margin-top: -100px;
+    }
+
+    #header-btn {
+        font-size: 3em;
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    .btn {
+        font-size: 3em;
+    }
+
+    .servico-item {
+        font-size: 2.8em;
+    }
+
+    #servicos-titulo {
+        font-size: 5em;
+    }
+
+    #servicos {
+        margin-top: -50px;
+    }
+
+    #cards {
+        margin-top: -200px;
+        margin-left: 280px;
+    }
+}
+
+@media(max-width:1000px) {
+    body {
+        overflow-y: scroll;
+        display: flex;
+        padding-bottom: 20px;
+    }
+
+    aside {
+        margin-top: 280px;
+        width: 80%;
+    }
+
+    body,
+    main,
+    aside,
+    #servicos,
+    #cards {
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+        position: static;
+    }
+
+    #servicos {
+        margin-top: 320px;
+    }
+
+    #servicos-titulo {
+        margin: 0;
+        margin-bottom: 50px;
+    }
+
+    #header-btn {
+        margin: 20px 0 0;
+        font-size: 2.2em;
+        width: 310px;
+    }
+
+    #footer-btn {
+        margin: 0;
+        left: 0;
+        position: relative;
+        bottom: -980px;
+        transform: translateX(90px);
+    }
+
+    .servico-card {
+        margin: 0 0 30px;
+    }
+
+    .servico-item {
+        font-size: 1.5em;
+    }
+}
+
+@media(max-width:750px) {
+    #servicos {
+        margin-top: 300px;
+    }
+
+    #footer-btn {
+        margin: 0;
+        left: 0;
+        position: relative;
+        bottom: -1000px;
+        transform: translateX(0);
+    }
 }
